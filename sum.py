@@ -1,9 +1,7 @@
-#we want to print sum
-print(3+3)
-
-
-
-#but when we want to print 33..
-x = str(3) + str(3)
-print(x)   # "33"
-
+def prime(n):
+    if n<2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
